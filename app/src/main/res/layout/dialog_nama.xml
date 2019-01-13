@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:klopos="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/lnly_dialog_edc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rvly_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+
+         >
+
+            <TextView
+                android:id="@+id/htvw_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+
+                android:gravity="center_vertical"
+                android:text="Masukkan nama"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_below="@id/rvly_header"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/met_nama"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="nama..."
+                klopos:met_floatingLabelText="NAMA "
+                klopos:met_floatingLabel="highlight"
+                app:layout_constraintTop_toBottomOf="@+id/met_username"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/btnRSimpan"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintTop_toBottomOf="@+id/met_password_ulangi"
+                    android:text="SIMPAN" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layoutNoUrut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Antrian"/>
+        <TextView
+            android:id="@+id/no_urut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="21"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@+id/layoutNoUrut"
+        app:layout_constraintStart_toEndOf="@+id/layoutNoUrut"/>
+    <TextView
+        android:id="@+id/pasien"
+        android:text="Dhimas Atha Abdillah"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/line" />
+    <TextView
+        android:id="@+id/poli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POLI ANAK"
+        app:layout_constraintStart_toStartOf="@+id/pasien"
+        app:layout_constraintTop_toBottomOf="@+id/pasien"/>
+    <TextView
+        android:id="@+id/w_antrian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 Januari 2016"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="@+id/pasien"
+        app:layout_constraintTop_toBottomOf="@+id/poli"/>
+</android.support.constraint.ConstraintLayout>

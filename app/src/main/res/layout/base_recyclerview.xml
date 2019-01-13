@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    >
+    <ToggleButton
+        android:id="@+id/tb_love"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/space16"
+        android:textOff=""
+        android:visibility="invisible"
+        android:textOn=""
+        android:button="@drawable/toggle_button"
+        android:background="@null"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/space16"
+        android:weightSum="5">
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_repeat"
+            android:visibility="gone"
+            android:background="@null"/>
+        <ImageButton
+
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_backward"
+            android:background="@null"/>
+        <ImageButton
+            android:id="@+id/imb_play"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play"
+            android:background="@null"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_forward"
+            android:visibility="gone"
+            android:background="@null"/>
+
+        <ImageButton
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_shuffle"
+            android:background="@null"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_bottom"
+        android:layout_margin="@dimen/space16">
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="2:01"
+            android:visibility="invisible"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextGrey"/>
+        <TextView
+            android:id="@+id/tv_full_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="3:47"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            android:textColor="@color/colorTextGrey" />
+        <ProgressBar
+            android:id="@+id/pg_load"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space8"
+            android:layout_toLeftOf="@id/tv_full_time"
+            android:layout_toRightOf="@id/tv_current_time"
+            android:layout_marginLeft="@dimen/space16"
+            android:layout_marginRight="@dimen/space16"
+            android:layout_centerVertical="true"
+            android:progressBackgroundTint="#E9E9E9"
+
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progress_bar"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_progress"
+        android:layout_centerHorizontal="true"
+        android:text="http://www.radioplfm.com/"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextGrey" />
+    <TextView
+        android:id="@+id/tv_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_artist"
+        android:layout_marginBottom="@dimen/space8"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_101_7_plfm_malang"
+        android:textSize="18sp"
+        android:textColor="@color/colorButtonGrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_song"
+        android:layout_below="@id/tb_love"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginBottom="@dimen/space16"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/back"
+        >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:ellipsize="none"
+            android:fontFamily="sans-serif-big"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="12:01"
+            android:textColor="@color/colorTextDark"
+            android:textSize="80sp" />
+        <TextView
+            android:id="@+id/tv_meta"
+            android:layout_below="@+id/tv_time"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:ellipsize="none"
+            android:fontFamily="sans-serif-big"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorTextDark"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
