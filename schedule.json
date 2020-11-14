@@ -1,0 +1,137 @@
+{
+  "status": true,
+  "data": [
+    {
+      "day": "brown",
+      "time": "blue",
+      "title": "Spears Harvey",
+      "subtitle": "Conley Buck",
+      "announcer": [
+        {
+          "name": "green"
+        },
+        {
+          "name": "blue"
+        }
+      ],
+      "tag": [
+        {
+          "name": "green"
+        },
+        {
+          "name": "blue"
+        }
+      ]
+    },
+    {
+      "day": "blue",
+      "time": "blue",
+      "title": "Waters Sears",
+      "subtitle": "Sheree Boyer",
+      "announcer": [
+        {
+          "name": "blue"
+        },
+        {
+          "name": "blue"
+        }
+      ],
+      "tag": [
+        {
+          "name": "brown"
+        },
+        {
+          "name": "green"
+        }
+      ]
+    },
+    {
+      "day": "brown",
+      "time": "blue",
+      "title": "Lenora Mcgee",
+      "subtitle": "Rodgers Carey",
+      "announcer": [
+        {
+          "name": "brown"
+        },
+        {
+          "name": "blue"
+        }
+      ],
+      "tag": [
+        {
+          "name": "blue"
+        },
+        {
+          "name": "brown"
+        }
+      ]
+    },
+    {
+      "day": "blue",
+      "time": "blue",
+      "title": "Kris Parks",
+      "subtitle": "Hayes Guy",
+      "announcer": [
+        {
+          "name": "blue"
+        },
+        {
+          "name": "blue"
+        }
+      ],
+      "tag": [
+        {
+          "name": "green"
+        },
+        {
+          "name": "green"
+        }
+      ]
+    },
+    {
+      "day": "blue",
+      "time": "blue",
+      "title": "Arlene Juarez",
+      "subtitle": "Alexandra Bowen",
+      "announcer": [
+        {
+          "name": "blue"
+        },
+        {
+          "name": "brown"
+        }
+      ],
+      "tag": [
+        {
+          "name": "green"
+        },
+        {
+          "name": "blue"
+        }
+      ]
+    },
+    {
+      "day": "blue",
+      "time": "blue",
+      "title": "Barton Cantu",
+      "subtitle": "Logan Mcdaniel",
+      "announcer": [
+        {
+          "name": "blue"
+        },
+        {
+          "name": "green"
+        }
+      ],
+      "tag": [
+        {
+          "name": "brown"
+        },
+        {
+          "name": "blue"
+        }
+      ]
+    }
+  ]
+}
